@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get 'counter', to: 'counter#show'
+  post 'increment', to: 'counter#increment'
+  post 'decrement', to: 'counter#decrement'
 
   # Defines the root path route ("/")
   root "articles#index"
