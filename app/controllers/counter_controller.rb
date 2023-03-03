@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 class CounterController < ApplicationController
   before_action :counter
-  def show
-  end
+  def show; end
 
   def increment
     counter.increment
